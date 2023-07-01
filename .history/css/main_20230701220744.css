@@ -400,8 +400,7 @@ img {
         padding: 0 10px;
     }
     .works-item {
-     /* max-width: 320px;
-        width: 100%; */
+        
         width: 97%;
         margin: 0 auto 30px auto;
     }
