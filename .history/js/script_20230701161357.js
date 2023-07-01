@@ -29,11 +29,11 @@ $('.slider').slick({
 //ハンバーガーボタン
 $(document).ready(function(){
     if ($(window).width() < 768) {
-        $('.hamburger-btn, .header-btn').on('click', function() {
-            $('.header-nav').fadeToggle(300);
-            $('.hamburger-btn').toggleClass('cross');
-            $('body').toggleClass('noscroll');
-        })
+    $('.hamburger-btn, .header-btn').on('click', function() {
+        $('.header-nav').fadeToggle(300);
+        $(this).toggleClass('cross');
+        $('body').toggleClass('noscroll');
+    });
     }
 });
 

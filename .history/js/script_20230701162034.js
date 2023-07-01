@@ -31,7 +31,7 @@ $(document).ready(function(){
     if ($(window).width() < 768) {
         $('.hamburger-btn, .header-btn').on('click', function() {
             $('.header-nav').fadeToggle(300);
-            $('.hamburger-btn').toggleClass('cross');
+            $('.hamburger').toggleClass('cross');
             $('body').toggleClass('noscroll');
         })
     }

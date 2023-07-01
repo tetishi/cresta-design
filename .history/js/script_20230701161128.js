@@ -15,9 +15,8 @@ $(function(){
             }
         }
     });
-});
 
-// スライダー
+    // スライダー
 $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -25,23 +24,15 @@ $('.slider').slick({
     speed: 1000,
     cssEase: 'linear'
 });
-
-//ハンバーガーボタン
-$(document).ready(function(){
-    if ($(window).width() < 768) {
-        $('.hamburger-btn, .header-btn').on('click', function() {
-            $('.header-nav').fadeToggle(300);
-            $('.hamburger-btn').toggleClass('cross');
-            $('body').toggleClass('noscroll');
-        })
-    }
 });
 
-$('#page-link a[href*="#"]').click(function(){
-    var elmHash = $(this).attr('href');
-    var pos = $(elmHash).offset().top;
-    $('body,html').animate({scrollTop: pos},500);
-    return false;
+
+
+//ハンバーガーボタン
+$('.hamburger-btn, .header-btn').on('click', function() {
+    $('.header-nav').fadeToggle(300);
+    $(this).toggleClass('cross');
+    $('body').toggleClass('noscroll');
 });
 
 
@@ -55,3 +46,9 @@ $('#page-link a[href*="#"]').click(function(){
 //     }
 // });
 
+// $('#page-link a[href*="#"]').click(function(){
+//     var elmHash = $(this).attr('href');
+//     var pos = $(elmHash).offset().top;
+//     $('body,html').animate({scrollTop: pos},500);
+//     return false;
+// });
