@@ -400,7 +400,10 @@ img {
         padding: 0 10px;
     }
     .works-item {
-        width: 97%;
+        /* max-width: 320px;
+        width: 100%; */
+        wid
+    
         margin: 0 auto 30px auto;
     }
     .works-item:last-of-type {
